@@ -1,3 +1,2 @@
 class Kind < ApplicationRecord
-  
 end
