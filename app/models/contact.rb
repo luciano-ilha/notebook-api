@@ -1,5 +1,5 @@
 class Contact < ApplicationRecord
-  belongs_to :kind #, optional: true
+  belongs_to :kind
   has_many :phones
 
   def birthdate_br
