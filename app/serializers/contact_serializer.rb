@@ -7,7 +7,8 @@ class ContactSerializer < ActiveModel::Serializer
   has_many :phones
   has_one :address
 
-  link(:self) { contact_url(object.id) }
+  # Hyperlinks related to aassociations
+  # link(:self) { contact_url(object.id) }
   # link(:kind) { kind_url(object.kind.id) }
 
   # Add meta information in all actions
