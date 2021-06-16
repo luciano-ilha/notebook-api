@@ -33,8 +33,11 @@ gem 'active_model_serializers', '~> 0.10.12'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # Used to easily generate fake data: names, addresses, phone numbers, etc.
   gem 'faker', '~> 2.18'
   gem 'pry-rails', '~> 0.3.9'
+  # rspec-rails is a testing framework for Rails 5+.
+  gem 'rspec-rails', '~> 5.0', '>= 5.0.1'
 end
 
 group :development do
