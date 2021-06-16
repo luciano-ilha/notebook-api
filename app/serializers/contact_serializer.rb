@@ -5,6 +5,11 @@ class ContactSerializer < ActiveModel::Serializer
   has_many :phones
   has_one :address
 
+  # Add meta information in all actions
+  meta do
+    { info: "Info u want" }
+  end
+
   def attributes(*args)
     h = super(*args)
     # pt-BR ---> h[:birthdate] = (I18n.l(object.birthdate) unless object.birthdate.blank?)
